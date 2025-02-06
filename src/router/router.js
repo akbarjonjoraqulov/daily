@@ -1,23 +1,35 @@
 import {createRouter, createWebHistory} from 'vue-router';
-import HomePage from "../pages/HomePage.vue";
 import Dashboard from "../pages/Dashboard.vue";
 import Contacts from "../pages/Contacts.vue";
+import ContactDetail from "../pages/ContactDetail.vue";
+import MeetingNotes from "../pages/MeetingNotes.vue";
+import AddContact from "../pages/AddContact.vue";
 
 const routes = [
     {
         path: '/',
-        name: 'home',
-        component: HomePage,
-    },
-    {
-        path: '/D',
-        name: 'Dashboard',
+        name: 'dashboard',
         component: Dashboard,
     },
     {
         path: '/',
         name: 'contacts',
         component: Contacts,
+    },
+    {
+        path: '/',
+        name: 'contactDetail',
+        component: ContactDetail,
+    },
+    {
+        path: '/',
+        name: 'meetingNotes',
+        component: MeetingNotes,
+    },
+    {
+        path: '/',
+        name: 'addContact',
+        component: AddContact,
     },
 ];
 export default createRouter({

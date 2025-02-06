@@ -1,10 +1,10 @@
 <script setup>
 
-import Contacts from "./pages/Contacts.vue";
+import AddContact from "./pages/AddContact.vue";
 </script>
 
 <template class="bg-gray-50">
-    <Contacts />
+    <AddContact />
 </template>
 
 <style scoped>
