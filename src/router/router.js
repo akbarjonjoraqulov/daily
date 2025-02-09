@@ -4,30 +4,36 @@ import Contacts from "../pages/Contacts.vue";
 import ContactDetail from "../pages/ContactDetail.vue";
 import MeetingNotes from "../pages/MeetingNotes.vue";
 import AddContact from "../pages/AddContact.vue";
+import SignUp from "@/pages/SignUp.vue";
 
 const routes = [
     {
-        path: '/',
+        path: "/",
+        name: "singUp",
+        component: SignUp,
+    },
+    {
+        path: '/dashboard',
         name: 'dashboard',
         component: Dashboard,
     },
     {
-        path: '/',
+        path: '/contacts',
         name: 'contacts',
         component: Contacts,
     },
     {
-        path: '/',
+        path: '/contacts/:id',
         name: 'contactDetail',
         component: ContactDetail,
     },
     {
-        path: '/',
+        path: '/meetingnotes',
         name: 'meetingNotes',
         component: MeetingNotes,
     },
     {
-        path: '/',
+        path: '/addContact',
         name: 'addContact',
         component: AddContact,
     },

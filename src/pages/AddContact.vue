@@ -25,7 +25,9 @@ import Sidebar from '../components/Sidebar.vue';
                     <input type="text" placeholder="Profession" class="input-style" required>
                     <input type="text" placeholder="Relation" class="input-style" required>
                 </div>
-                <button type="submit" class="submit-btn">Save Contact</button>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-xl hover:bg-blue-600 transition">
+                    Save Contact
+                </button>
             </form>
         </div>
     </div>
@@ -34,10 +36,6 @@ import Sidebar from '../components/Sidebar.vue';
 <style scoped>
 .input-style {
     @apply border border-gray-400 rounded-xl p-3 w-full;
-}
-
-.submit-btn {
-    @apply bg-blue-500 text-white px-4 py-2 rounded-xl hover:bg-blue-600 transition;
 }
 </style>
 
