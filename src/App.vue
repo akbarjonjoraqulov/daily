@@ -1,10 +1,9 @@
 <script setup>
 
-import AddContact from "./pages/AddContact.vue";
 </script>
 
 <template class="bg-gray-50">
-    <AddContact />
+    <router-view />
 </template>
 
 <style scoped>
